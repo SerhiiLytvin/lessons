@@ -1,0 +1,112 @@
+@import url("reset.css");
+
+body {
+	font-size: 20px;	
+}
+
+.item__link {
+	text-decoration: underline;
+	color: blue;
+}
+
+span {
+	font-weight: 700;
+	color: inherit;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+	margin: 0px 0px 10px 0px;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: 700;
+	margin: 0px 0px 10px 0px;
+}
+
+p,
+ul {
+	margin: 0px 0px 10px 0px;
+}
+
+/* ------------------------------- */
+
+* {
+color: green;
+}
+
+h2 {
+	color: blue;
+}
+
+p {
+	color: inherit;
+}
+
+.page__title {
+	color: red;
+}
+
+#article26 {
+	color: #744444;
+}
+
+[class*="ent24"] {
+	color: coral;
+}
+
+div.article__content28 {
+	color: blueviolet;
+}
+
+.page__content h1 {
+	color: crimson;
+}
+
+.footer a {
+	color: black;
+}
+
+.page__content h2 {
+	border: 1px solid red;
+	margin-left: 50px;
+}
+
+.item .item__link {
+	border: 2px solid blue;
+	padding-bottom: 5px;
+}
+
+.article__content22 * {
+	color:blue;
+}
+
+.article__content29 > p {
+	color: yellow;
+}
+
+.article__content30 ~ p {
+	color: red;
+}
+
+.article__content30 + p {
+	color: darkcyan;
+}
+
+.article__content33 {
+	color: gold;
+}
+
+.article__content32 + div {
+	color: aqua;
+}
+
+.article__content34 {
+	color: chartreuse;
+}
+
+.article__content34 p {
+	color: crimson;
+}
