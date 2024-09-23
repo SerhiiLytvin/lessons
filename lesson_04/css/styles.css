@@ -74,7 +74,7 @@ body {
 }
 
 .professional__title {
-	font-family: "Work Sans";
+	font-family: "WorkSans";
 	font-size: 38px;
 	font-weight: 600;
 	line-height: 131.579%;
@@ -82,7 +82,7 @@ body {
 }
 
 .professional__text {
-	font-family: "Work Sans";
+	font-family: "WorkSans";
 	font-size: 18px;
 	line-height: 133.333%;
 	color: #556070;
@@ -105,7 +105,7 @@ body {
 }
 
 .aboutus__title {
-	font-family: "DM Sans";
+	font-family: "DMSans";
 	font-size: 88px;
 	font-weight: 700;
 	line-height: 107.955%;
@@ -113,7 +113,7 @@ body {
 }
 
 .aboutus__text {
-	font-family: "DM Sans";
+	font-family: "DMSans";
 	font-size: 24px;
 	line-height: 175%;
 	color: #474464;
