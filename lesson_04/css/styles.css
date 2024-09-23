@@ -76,7 +76,6 @@ body {
 .professional__title {
 	font-family: "Work Sans";
 	font-size: 38px;
-	font-style: normal;
 	font-weight: 600;
 	line-height: 131.579%;
 	color: #132238;
@@ -85,8 +84,6 @@ body {
 .professional__text {
 	font-family: "Work Sans";
 	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
 	line-height: 133.333%;
 	color: #556070;
 }
@@ -94,7 +91,6 @@ body {
 .introduction__title {
 	font-family: 'Roboto';
 	font-size: 50px;
-	font-style: normal;
 	font-weight: 500;
 	line-height: 132%;
 	letter-spacing: 1px;
@@ -104,8 +100,6 @@ body {
 .introduction__text {
 	font-family: 'Roboto';
 	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
 	line-height: 166.667%;
 	color: #505F98;
 }
@@ -113,7 +107,6 @@ body {
 .aboutus__title {
 	font-family: "DM Sans";
 	font-size: 88px;
-	font-style: normal;
 	font-weight: 700;
 	line-height: 107.955%;
 	color: #1E1B39;
@@ -122,8 +115,6 @@ body {
 .aboutus__text {
 	font-family: "DM Sans";
 	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
 	line-height: 175%;
 	color: #474464;
 }
