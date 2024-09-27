@@ -71,6 +71,10 @@
    vertical-align: middle;
 }
 
+.content__image img {
+   max-width: 72px;
+}
+
 .content__title {
    font-family: Manrope;
    font-size: 24px;
@@ -78,6 +82,7 @@
    color: #FFF;;
    line-height: 150%;
    display: inline-block;
+   vertical-align: middle;
 }
 
 .content__text {
@@ -110,6 +115,10 @@
    margin-block-end: 69px;
 }
 
+.introduction__body :not(:last-child) {
+   margin-block-end: 10px;
+}
+
 .title {
    font-family: Roboto;
    font-weight: 500;
@@ -138,7 +147,7 @@
 .introduction__buttons a {
    font-family: Roboto;
    font-weight: 500;
-   width: 189px;
+   min-width: 189px;
    line-height: 162.5%;
    border-radius: 2px;
    text-align: center;
@@ -175,6 +184,10 @@
    margin-block-end: 70px;
 }
 
+.design__text :not(:last-child) {
+   margin-bottom: 10px;
+}
+
 .design__title {
    font-size: 36px;
    line-height: 133.333%;
@@ -204,6 +217,10 @@
 
 .design__content-img {
    margin-block-end: 14px;
+}
+
+.design__content-img {
+   max-width: 36px;
 }
 
 .design__content-title {
@@ -383,7 +400,6 @@
    /* overflow: visible; */
    /* margin-bottom: 100px; */
 }
-
 
 
 
