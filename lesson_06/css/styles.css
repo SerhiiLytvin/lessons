@@ -1,0 +1,323 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600,700&display=swap");
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.container {
+   max-width: 1440px;
+   margin-inline: auto;
+   padding-inline: 15px;
+}
+
+.newlook__container {
+   max-width: 1199px;
+   margin-inline: auto;
+   padding-inline: 15px;
+}
+
+.experiance__container {
+   max-width: 1950px;
+   margin: 0 auto;
+   padding-inline: 15px;
+}
+
+/* ================================= */
+.page {
+   padding: 30px;
+}
+
+.page__newlook {
+   background-color: #FDF0E9;   
+}
+
+/* ================================= */
+.newlook {
+   padding-block-start: 215px;
+   padding-block-end: 202px;
+}
+
+.newlook__body {
+   background: 
+   url('../img/pic_newlook.png') 641px -24px / 529px no-repeat;
+   height: 551px;
+
+}
+
+.newlook__text {
+   font-family: Epilogue;
+   color: #391400;
+   max-width: 470px;
+   display: inline-block;
+   padding-block-start: 105px;
+}
+
+.newlook__title {   
+   font-size: 56px;
+   font-weight: 800;
+   line-height: 114.286%;
+   letter-spacing: -1px;
+   margin-block-end: 26px;
+   
+}
+
+.newlook__description {
+   font-size: 20px;
+   line-height: 160%;
+   margin-block-end: 24px;
+}
+
+.newlook__item {
+   font-family: Epilogue;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 200%;
+   color: rgba(57, 20, 0, 0.64);
+   background: url("../img/check_newlook.svg") 0px 0px / 32px no-repeat;
+   padding-left: 48px;
+   min-height: 32px;
+}
+
+.newlook__item:not(:last-child) {
+   margin-block-end: 16px;
+}
+
+/* =================================== */
+
+.page__experiance {
+   background-color: #1E1E1E;
+   padding-block-end: 200px;
+}
+
+.experiance {}
+
+.experiance__container {}
+
+.experiance__background {
+   height: 860px;
+   line-height: 860px;
+
+   background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%),
+   linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%),
+   url(../img/pict_experiance.png) top center / auto auto no-repeat #141414;
+}
+
+.experiance__image {
+   text-align: center;
+}
+
+.experiance__image img {
+   vertical-align: middle;
+}
+
+.experiance__description {
+   max-width: 1096px;
+   margin: 0 auto;
+   font-family: Manrope;
+   text-align: center;
+   margin-top: -64px;
+}
+
+.experiance__title {   
+   font-size: 58px;
+   font-weight: 700;
+   line-height: 150%;
+   color:#FFF;
+   margin-block-end: 14px;
+}
+
+.experiance__text {
+   font-size: 18px;
+   line-height: 150%;
+   color: #999;
+   margin-block-end: 50px;
+}
+
+.experiance__button {
+   text-align: center;
+}
+
+.experiance__button a {
+   padding: 18px 24px;
+   border-radius: 8px;
+   background-color:  #E50000;
+}
+
+.experiance__button span {
+   font-family: Manrope;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 150%;
+   color: #FFF;
+   background: url('../img/icon__experiance.svg') left / 28px no-repeat;
+   padding-inline-start: 30px;
+   display: inline-block;
+}
+
+
+/* ================================== */
+
+.block {
+   background-color: #77608d;
+}
+
+.inline {
+   background-color: #7a956b;
+}
+
+.inline-block {
+   background-color: #794f45;
+}
+
+.section-1 {
+   padding-block: 10px;
+   background-color: #77608d;
+}
+
+.section-2 {
+   padding-block: 10px;
+   background-color: #7a956b;
+}
+
+.section-3 {
+   padding-block: 10px;
+   background-color: #794f45;
+   margin-bottom: 20px;
+}
+
+/* =========================================== */
+
+.block {
+   /* border: 2px solid red; */
+   /* border: 10px dotted red; */
+   /* border: 10px dashed red; */
+   /* border: 10px double red; */
+   /* border: 25px dashed transparent; */
+
+   /* border-top: 5px solid red;
+   border-right: 5px solid green;
+   border-bottom: 5px solid blue;
+   border-left: 5px solid orange; */
+
+   /* border-inline: 20px dashed red;
+   border-block: 30px dotted green;
+   writing-mode: vertical-rl; */
+
+   /* border-width: 10px;
+   border-style: dashed;
+   border-color: aqua; */
+}
+
+.block {
+   /* border: 5px solid red; */
+}
+
+.block:hover {
+   /* border: none;
+   padding: 5px; */
+   /* border-color: transparent; */
+
+   /* border-inline-start: 10px solid blue;
+   border-inline-end: 10px dashed green;
+   border-block-start: 10px solid red;
+   border-block-end: 10px solid yellow; */
+}
+
+.inline {
+   /* border: 5px solid red;
+   line-height: 1.8; */
+} 
+
+.link {
+   /* color: yellow;
+   border-bottom: 1px dashed; */
+
+   /* text-decoration: underline;
+   text-decoration-color: yellow;
+   text-decoration-style: wavy; */
+}
+
+.inline-block {
+   /* border: 10px solid blue; */
+}
+
+.block {
+   /* outline: 10px solid yellow;
+   outline-offset: 10px; */
+}
+
+.block {
+   /* padding: 20px;
+   border-radius: 20px; */
+
+   /* width: 300px;
+   height: 300px;border-radius: 50%; */
+}
+
+.block {
+   /* max-width: 400px; */
+
+   /* box-shadow: 10px 10px 20px 20px #000; */
+   /* box-shadow: inset 0px 0px 10px 3px #000; */
+   /* box-shadow: inset 10px -10px 10px 10px #000; */
+}
+
+.block {
+   /* opacity: 0.5; */
+}
+
+.block {
+   /* max-width: 720px; */
+   /* min-height: 600px; */
+   /* background-image: url("../img/honey.jpg"); */
+   /* background-repeat: no-repeat; */
+}
+
+.block {
+   /* background-repeat: no-repeat; */
+   /* background-size: 200px; */
+   /* background-position: 20px 10px; */
+   /* background-position: center; */
+   /* background-position: 20% 10%; */
+   /* background-position: bottom; */
+   /* background-position: bottom right; */
+}
+
+.block {
+   /* background-attachment: fixed; */
+}
+
+.block {
+   background-repeat: no-repeat;
+   /* background-size: auto auto; */
+   /* background-size: 200px; */
+   /* background-size: 200px auto; */
+   /* background-size: auto 200px; */
+   /* background-size: 200px 50px; */
+   /* background-size: contain; */
+   /* background-size: cover; */
+   /* background-position: center; */
+}
+
+.block {
+   background: green url("../img/honey.jpg") center / cover no-repeat fixed;
+
+   /* background: color url bg-position / bg-size bg-repeat bg-attachment*/
+}
+
+.list {
+
+}
+
+.list li {
+   font-size: 25px;
+   padding-top: 5px;
+   vertical-align: middle;
+   background: url("../img/check.svg") 0 0 / 35px no-repeat;
+   margin-bottom: 10px;
+   padding-left: 55px;
+   min-height: 55px;
+}
