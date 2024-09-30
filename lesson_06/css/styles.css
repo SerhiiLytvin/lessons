@@ -25,9 +25,6 @@
 }
 
 /* ================================= */
-.page {
-   padding: 30px;
-}
 
 .page__newlook {
    background-color: #FDF0E9;   
@@ -42,7 +39,7 @@
 .newlook__body {
    background: 
    url('../img/pic_newlook.png') 641px -24px / 529px no-repeat;
-   height: 551px;
+   min-height: 551px;
 
 }
 
@@ -97,12 +94,12 @@
 .experiance__container {}
 
 .experiance__background {
-   height: 860px;
+   min-height: 860px;
    line-height: 860px;
 
    background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%),
    linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%),
-   url(../img/pict_experiance.png) top center / auto auto no-repeat #141414;
+   url(../img/pict_experiance.png) top center / cover no-repeat #141414;
 }
 
 .experiance__image {
@@ -127,6 +124,7 @@
    line-height: 150%;
    color:#FFF;
    margin-block-end: 14px;
+   text-transform: capitalize;
 }
 
 .experiance__text {
@@ -152,9 +150,10 @@
    font-weight: 600;
    line-height: 150%;
    color: #FFF;
-   background: url('../img/icon__experiance.svg') left / 28px no-repeat;
+   background: url('../img/icon__experiance.svg') 0 0 / 28px no-repeat;
    padding-inline-start: 30px;
    display: inline-block;
+   text-transform: capitalize;
 }
 
 
