@@ -143,10 +143,11 @@
 .agency__image {
    max-width: 970px;
    margin: 0 auto;   
+   margin-bottom: 74px;
 }
 
-.agency__image:has(img) {
-   margin-bottom: 74px;
+.agency__image img {
+   border-radius: 4px;
 }
 
 .agency__container {
@@ -159,24 +160,46 @@
    font-family: Epilogue;
 }
 
-.agency__text p:nth-of-type(1) {   
+.agency__service-range {   
    font-size: 20px;
    line-height: 160%;
    color: #391400;
 }
 
-.agency__text p:nth-of-type(1):not(:last-child) {
+.agency__service-range:not(:last-child) {
    margin-bottom: 32px;
 }
 
-.agency__text p:nth-of-type(2) {
+.agency__text p {
    line-height: 200%;
    color: rgba(57, 20, 0, 0.64);
 }
 
-.agency__text p:nth-of-type(2):not(:last-child) {
+.agency__text p:not(:last-child) {
+   margin-bottom: 32px;
+}
+
+.agency__text .agency__outsource:not(:last-child) {
    margin-bottom: 51px;
 }
+
+.agency__text p:has(+ ul):not(:last-child) {
+   margin-bottom: 34px;
+}
+
+.agency__text p:has(+ ol):not(:last-child) {
+   margin-bottom: 28px;
+}
+
+.agency__text p:has(+ .agency__header):not(:last-child) {
+   margin-bottom: 65px;
+}
+
+.agency__text p:has(+ .agency__quotes):not(:last-child) {
+   margin-bottom: 69px;
+}
+
+
 
 .agency__title {
    font-size: 24px;
@@ -189,14 +212,9 @@
    margin-bottom: 35px;
 }
 
-.agency__text p:nth-of-type(3) {
-   line-height: 200%;
-   color: rgba(57, 20, 0, 0.64);
-}
-
-.agency__text p:nth-of-type(3):not(:last-child) {
+/* .agency__text p:nth-of-type(3):not(:last-child) {
    margin-bottom: 35px;
-}
+} */
 
 .agency__list li {
    line-height: 200%;
@@ -217,23 +235,13 @@
    margin-right: 16px;
 }
 
-.agency__text p:nth-of-type(4) {
-   line-height: 200%;
-   color: rgba(57, 20, 0, 0.64);
-}
-
-.agency__text p:nth-of-type(4):not(:last-child) {
+/* .agency__text p:nth-of-type(4):not(:last-child) {
    margin-bottom: 65px;
-}
+} */
 
-.agency__text p:nth-of-type(5) {
-   line-height: 200%;
-   color: rgba(57, 20, 0, 0.64);
-}
-
-.agency__text p:nth-of-type(5):not(:last-child) {
+/* .agency__text p:nth-of-type(5):not(:last-child) {
    margin-bottom: 28px;
-}
+} */
 
 .agency__list-number li {
       line-height: 200%;
@@ -241,14 +249,9 @@
       list-style-position: inside;
 }
 
-.agency__text p:nth-of-type(6) {
-   line-height: 200%;
-   color: rgba(57, 20, 0, 0.64);
-}
-
-.agency__text p:nth-of-type(6):not(:last-child) {
+/* .agency__text p:nth-of-type(6):not(:last-child) {
    margin-bottom: 69px;
-}
+} */
 
 .agency__quotes  {
    border-radius: 6px;
@@ -267,7 +270,7 @@
    vertical-align: top;
 }
 
-.agency__quotes p{
+.agency__quotes p {
    font-size: 20px;
    line-height: 160%;
    color: #391400;
@@ -277,11 +280,6 @@
 
 .agency__quotes:not(:last-child) {
    margin-bottom: 76px;
-}
-
-.agency__text p:nth-of-type(7) {
-   line-height: 200%;
-   color: rgba(57, 20, 0, 0.64);
 }
 
 
@@ -439,6 +437,7 @@
    font-size: 28px;
    line-height: 135.714%;
    color: #1E1B39;
+   padding-left: 50px;
 }
 
 .pricing__list li:not(:last-child) {
@@ -452,8 +451,8 @@
    background: url('../img/check_pricing.svg') 0 0 / 36px no-repeat;
    margin-right: 14px;
    vertical-align: middle;
+   margin-left: -50px;
 }
-
 
 /* ===== Trainee==== */
 
