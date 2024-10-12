@@ -1,0 +1,115 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Rubik+Dirt:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shantell+Sans:regular&display=swap");
+
+.body {
+
+   font-family: "Shantell Sans", sans-serif;
+   font-size: 24px;
+   color: rgb(50, 50, 50);
+
+   background: 
+      linear-gradient(90deg, 
+         rgba(220, 240, 162, 0.7708333333333334) 2%, 
+         rgba(255, 255, 255, 1) 52%, 
+         rgba(179, 136, 198, 0.8240546218487395) 99%);
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+/* ========= Header ========= */
+
+.header__container {
+   padding: 40px 0;
+   margin: 0 auto;
+   background: 
+      linear-gradient(90deg, 
+         rgba(164, 164, 164, 1) 36%, rgba(153, 245, 188, 1) 92%);
+   box-shadow: 5px 0px 10px red;
+   border-radius: 30%;
+   margin-bottom: 100px;
+}
+
+.header__title h1{
+   text-align: center;
+   font-family: "Rubik Dirt", sans-serif;
+   color: brown;
+   font-size: 50px;
+   letter-spacing: 7px;
+   text-shadow: 8px 2px 0px rgba(0, 0, 0, 0.44);
+   text-transform: uppercase;
+}
+
+/* ====== Page ======== */
+.page__container {
+   max-width: 1500px;
+   margin: 0 auto;   
+   padding-inline: 15px;
+}
+
+.page__about-me {
+   padding: 15px 20px;
+   border: 5px solid grey;
+   background-color: #FFE7A0;
+   margin-bottom: 100px;
+}
+
+.about-me__item {
+   display: flex;
+   align-items: center;
+}
+
+.item:not(:last-child) {
+   margin-block-end: 50px;
+}
+
+.about-me__item span {
+   padding-inline-start: 10px;
+   font-family: "Shantell Sans", sans-serif;
+   font-size: 24px;
+   color: rgb(50, 50, 50);
+}
+
+.about-me__item img {
+   vertical-align: middle;
+}
+
+.icon {
+   display: inline-block;
+   text-align: center;
+}
+
+.item__icon-rectangle {
+   background-color: #EF6C57;
+   width: 112px;
+   height: 112px;
+   border-radius: 50%; 
+   line-height: 112px;
+}
+
+.item__icon-star {
+   background-color: #EF6C57;
+   width: 148px;
+   height: 148px;
+   background: url('../img/star-icon.svg') 0 0 / 148px 148px no-repeat;
+   vertical-align: middle;
+   line-height: 148px;
+   
+}
+
+.item__playback {
+   width: 570px;
+   height: 368px;
+   background: url('../img/about_me_playback.webp') 0 0 / 570px 368px no-repeat;
+   vertical-align: middle;
+   line-height: 368px;
+   border-radius: 6px;
+}
+
+.item__block img {
+   border-radius: 6px;
+   box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
+}
