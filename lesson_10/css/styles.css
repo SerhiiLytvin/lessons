@@ -9,9 +9,8 @@
 
 /* ========= page__agency ======== */
 .page__agency {
-   padding-block-start: 116px;
-   padding-block-end: 84px;
-   
+   padding-block-start: 114px;
+   padding-block-end: 56px;   
    background: #28293E
 }
 
@@ -117,17 +116,21 @@
 }
 
 .ag-images__notebook {
-   position: absolute;   
-   top: 0;
-   left: 0;
-   background-color: #B550F8;   
-   z-index: 5;
+  
 }
 
-.ag-images__notebook img {
-   position: relative;
+.notebook__background {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index: 5;   
+}
+
+.notebook__img{
+   position: absolute;
    top: 24px;
-   left: 21px; 
+   left: 21px;
+   z-index: 6;
 }
 
 .ag-images__girl {
@@ -188,7 +191,7 @@
    left: 100px;
    width: 370px;
    height: 370px;
-   border-radius: 370px;
+   border-radius: 50%;
    background: #32334C;
    z-index: 1;
 }
@@ -210,22 +213,29 @@
 .quote {}
 
 .quote__image {
-  
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.quote__image img {
+   width: 48px;
+   height: 48px;
 }
 
 .quote__text {
-  
+   margin-inline-start: 16px;
 }
 
 .quote__quote {
-   margin-inline-start: 16px;
+   /* margin-inline-start: 16px; */
    font-family: Epilogue;
    line-height: 200%;
    color: rgba(255, 255, 255, 0.64);
 }
 
 .quote__meta {
-   margin-inline-start: 22px;
+   /* margin-inline-start: 22px; */
+   padding-inline-start: 6px;
    font-family: Epilogue;
    line-height: 200%;
    color: #FFF;
@@ -245,6 +255,7 @@
    max-width: 1201px;
    margin: 0 auto;
    padding-inline: 15px;
+   margin-block-end: 64px;
 }
 
 .portfolio__header {
@@ -252,7 +263,7 @@
 }
 
 .portfolio__works {
-   margin-block-end: 64px;
+   /* margin-block-end: 64px; */
    display: flex;
    justify-content: space-between;
 }
@@ -314,7 +325,8 @@
 .portfolio__text {
    position: absolute;
    left: 48px;
-   top: 416px;
+   bottom: 51px;
+   right: 15px;
 }
 
 .text-label {}
