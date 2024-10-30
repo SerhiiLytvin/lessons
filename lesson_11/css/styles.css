@@ -47,110 +47,112 @@ body {
    text-align: center;
    line-height: 300px;
    border: 2px solid #000;
+
+   transition: transform 1s;
 }
 
 .transform__parrent:hover .transform__translate1 {
    transform: translate(20px, 30px);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__translate2 {
    transform: translate(-20px, -30px);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__translate3 {
    transform: translate(20px, 0px);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__translate4 {
    transform: translate(0px, 30px);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__scale1 {
    transform: scale(1,2);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__scale2 {
    transform: scale(-1, 1);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__scale3 {
    transform: scale(0.8);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__scale4 {
    transform: scale(2);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__rotate1 {
    transform: rotate(20deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__rotate2 {
    transform: rotate(-20deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__rotate3 {
    transform: rotateX(60deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__rotate4 {
    transform: rotateY(60deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__skew1 {
    transform: skew(10deg, 10deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__skew2 {
    transform: skew(-10deg, 40deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__skew3 {
    transform: skew(30deg, -40deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__skew4 {
    transform: skew(-40deg, -20deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__origin1 {
    transform-origin: 50% 50%;
    transform: rotate(45deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__origin2 {
    transform-origin: top right;
    transform: rotate(45deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__origin3 {
    transform-origin: top left;
    transform: rotate(45deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__origin4 {
    transform-origin: bottom left;
    transform: rotate(45deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .perspective {
@@ -160,42 +162,42 @@ body {
 
 .transform__parrent:hover .transform__translate1-3D {
    transform: rotateX(60deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__translate2-3D {
    transform: rotateY(60deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__translate3-3D {
    transform: translate3D(20px, 20px, 30px);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__translate4-3D {
    transform: scale3D(2, 3, 2);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__translate5-3D {
    transform: rotate3d(30, 20, 80, 40deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__translate6-3D {
    transform: rotateY(10deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__translate7-3D {
    transform: rotate3d(50, 50, 200, 50deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 .transform__parrent:hover .transform__translate8-3D {
    transform: rotate3d(50, 0, 0, 50deg);
-   transition: all 1s;
+   /* transition: all 1s; */
 }
 
 /* ======== Car ======== */
@@ -307,9 +309,6 @@ body {
    position: absolute;
    top: 10px;
    left: 195px;
-}
-
-.cabin__bottom {  
 }
 
 .bottom__left {
