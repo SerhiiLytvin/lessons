@@ -1,0 +1,660 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800,900&display=swap");
+
+body {
+   font-family: "Epilogue", sans-serif;
+   background-color: #333;
+   color: #fff;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden; 
+}
+
+[class*="__container"] {
+   max-width: 1470px;
+   padding-inline: 15px;
+   margin: 0 auto;
+}
+
+/* ====== transform ======= */
+
+.page__trqansform {
+   padding-block: 50px;
+   background-color: #CCFFCC;
+}
+
+.transform {}
+
+.transform__container {}
+
+.transform__body {}
+
+.transform__parrent {
+   width: 300px;
+   height: 300px;
+   display: inline-block;
+   background-color: rgba(255, 255, 255);
+   margin: 20px;
+}
+
+.translate {
+   width: 300px;
+   height: 300px;
+   padding: 10px;
+   background-color: #7a956b;
+   text-align: center;
+   line-height: 300px;
+   border: 2px solid #000;
+}
+
+.transform__parrent:hover .transform__translate1 {
+   transform: translate(20px, 30px);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__translate2 {
+   transform: translate(-20px, -30px);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__translate3 {
+   transform: translate(20px, 0px);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__translate4 {
+   transform: translate(0px, 30px);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__scale1 {
+   transform: scale(1,2);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__scale2 {
+   transform: scale(-1, 1);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__scale3 {
+   transform: scale(0.8);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__scale4 {
+   transform: scale(2);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__rotate1 {
+   transform: rotate(20deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__rotate2 {
+   transform: rotate(-20deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__rotate3 {
+   transform: rotateX(60deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__rotate4 {
+   transform: rotateY(60deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__skew1 {
+   transform: skew(10deg, 10deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__skew2 {
+   transform: skew(-10deg, 40deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__skew3 {
+   transform: skew(30deg, -40deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__skew4 {
+   transform: skew(-40deg, -20deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__origin1 {
+   transform-origin: 50% 50%;
+   transform: rotate(45deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__origin2 {
+   transform-origin: top right;
+   transform: rotate(45deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__origin3 {
+   transform-origin: top left;
+   transform: rotate(45deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__origin4 {
+   transform-origin: bottom left;
+   transform: rotate(45deg);
+   transition: all 1s;
+}
+
+.perspective {
+   perspective: 300px;
+   perspective-origin: center;
+}
+
+.transform__parrent:hover .transform__translate1-3D {
+   transform: rotateX(60deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__translate2-3D {
+   transform: rotateY(60deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__translate3-3D {
+   transform: translate3D(20px, 20px, 30px);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__translate4-3D {
+   transform: scale3D(2, 3, 2);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__translate5-3D {
+   transform: rotate3d(30, 20, 80, 40deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__translate6-3D {
+   transform: rotateY(10deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__translate7-3D {
+   transform: rotate3d(50, 50, 200, 50deg);
+   transition: all 1s;
+}
+
+.transform__parrent:hover .transform__translate8-3D {
+   transform: rotate3d(50, 0, 0, 50deg);
+   transition: all 1s;
+}
+
+/* ======== Car ======== */
+
+.page__car {
+   position: relative;
+}
+
+.car__image {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.car__body {
+   width: 800px;
+   height: 500px;
+   position: absolute;
+   top: 300px;
+   transform: translate(85%,0px);
+}
+
+.car__bodywork {
+   margin: 0 auto;   
+}
+
+.car__cabin {}
+
+.cabin__top {  
+   width: 378px;
+   height: 150px;
+   border: 2px solid #000;
+   position: absolute;
+   top: 216px;
+   left: 210px;
+   border-radius: 100px 100px 0 0 / 150px 150px 0 0;
+   background-color: #e42f2f;
+}
+
+.cabin__rudder {
+   width: 50px;
+   height: 50px;
+   background-color: #000;
+   border-radius: 50%;
+   transform: skew(30deg, 30deg);
+   position: relative;
+   top: 72px;
+   left: 34px;
+   z-index: 10;
+}
+
+.rudder__inner {
+   width: 30px;
+   height: 30px;
+   background-color: brown;
+   border-radius: 50%;
+   position: absolute;
+   left: 10px;
+   top: 10px;
+}
+
+.rudder__inner1 {
+   width: 20px;
+   height: 20px;
+   background-color: #000;
+   border-radius: 50%;
+   position: absolute;
+   left: 5px;
+   top: 5px;  
+}
+
+
+.cabin__stage {
+   width: 10px;
+   height: 34px;
+   transform: rotate(45deg);
+   background-color: #000;
+   position: absolute;
+   left: 33px;
+   top: 97px;
+   z-index: 12;
+
+}
+
+.cabin__window {}
+
+.window {}
+
+.window__left {
+   width: 155px;
+   height: 120px;
+   background-color: #fff;
+   border: 3px solid #000;
+   border-radius: 100px 0 0 0 / 150px 0 0 0;
+   position: absolute;
+   top: 10px;
+   left: 20px;
+}
+
+.window__right {
+   width: 155px;
+   height: 120px;
+   background-color: #fff;
+   border: 3px solid #000;
+   border-radius: 0 100px 0 0 / 0 150px 0 0;
+   position: absolute;
+   top: 10px;
+   left: 195px;
+}
+
+.cabin__bottom {  
+}
+
+.bottom__left {
+   width: 100px;
+   height: 38px;
+   background-color: #e42f2f;
+   position: absolute;
+   top: 346px;
+   left:106px; 
+   border-left: 4px solid #000;
+   transform: skew(-70deg);
+   transform-origin: bottom left;
+}
+
+.bottom__middle {
+   width: 375px;
+   height: 38px;
+   background-color: #e42f2f;
+   position: absolute;
+   top: 346px;
+   left: 212px;
+}
+
+.bottom__right {
+   width: 100px;
+   height: 38px;
+   background-color: #e42f2f;
+   position: absolute;
+   top: 346px;
+   left: 594px;
+   border-right: 4px solid #000;
+   transform: skew(70deg);
+   transform-origin: bottom left;
+}
+
+.bottom__door {
+   width: 5px;
+   height: 120px;
+   background-color: #000;
+   position: absolute;
+   top: 368px;
+   left: 395px;
+   z-index: 10;
+}
+
+.bottom__wing {
+   width: 5px;
+   height: 110px;
+   background-color: #000;
+   position: absolute;
+   top: 325px;
+   left: 168px;
+   transform: rotate(69deg);
+   z-index: 10;
+}
+
+.bottom__handle::before {
+   content:"";
+   width: 47px;
+   height: 16px;
+   border: 2px solid #000;
+   border-radius: 40px;
+   position: absolute;
+   left: 329px;
+   top: 357px;
+}
+
+.bottom__handle::after {
+   content: "";
+   width: 47px;
+   height: 16px;
+   border: 2px solid #000;
+   border-radius: 40px;
+   position: absolute;
+   left: 513px;
+   top: 357px;
+}
+
+.bottom__headlamp {
+   width: 30px;
+   height: 55px;
+   border-radius: 20px;
+   background-color: #606060;
+   position: absolute;
+   top: 395px;
+   left: 87px;
+   z-index: 10;
+}
+
+.headlamp__light {
+   width: 20px;
+   height: 45px;
+   border-radius: 20px;
+   background-color: #FAFA9C;
+   position: absolute;
+   top: 4px;
+   left: 2px;
+      box-shadow: -25px 5px 25px 15px rgb(245, 249, 6);
+}
+
+.bottom__lantern {
+   width: 25px;
+   height: 35px;
+   border-radius: 20px;
+   background-color: #606060;
+   position: absolute;
+   top: 395px;
+   right: 90px;
+   z-index: 10;
+}
+
+.lantern__light {
+   width: 18px;
+   height: 25px;
+   border-radius: 20px;
+   background-color: #d40808;
+   position: absolute;
+   top: 4px;
+   left: 5px;
+   box-shadow: 10px 1px 35px 10px red;
+}
+
+.bumper__front {
+   width: 60px;
+   height: 45px;
+   background-color: #606060;
+   border-radius: 0px 11px 14px 21px / 0px 9px 12px 58px;
+   position: absolute;
+   bottom: -17px;
+   left: 74px;
+   z-index: 10;
+}
+
+.bumper__back {
+   width: 90px;
+   height: 57px;
+   background-color: #606060;
+   border-radius: 11px 0px 14px 21px / 9px 0px 58px 12px;
+   position: absolute;
+   bottom: -17px;
+   right: 73px;
+   z-index: 10;
+}
+
+.car__wheels-block {
+   width: 640px;
+   height: 116px;
+   border-top-left-radius: 40px;
+   border-top-right-radius: 40px;
+   background-color: #e42f2f;
+   border-left: 4px solid #000;
+   border-right: 4px solid #000;
+   border-bottom: 4px solid #000;   
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translate(-50%, -100%);
+}
+
+.wheels-block {}
+
+.wheels-block__wheel-places {
+   width: 492px;
+   height: 84px;
+   position: relative;
+   left: 54px;
+   top: 100%;
+   transform: translate(0, -100%);
+}
+
+.wheel-places {
+   position: relative;
+}
+
+.wheel-places__front {
+   width: 138px;
+   height: 74px;
+   background-color: #000;
+   position: absolute;
+   left: 0;
+   top: 10px;
+   border-top-left-radius: 80px;
+   border-top-right-radius: 80px;
+}
+
+.wheel {
+   width: 126px;
+   height: 126px;
+   border-radius: 50%;
+   background-color: #404040;   
+   border: 3px dashed #000;
+}
+
+.front__wheel {
+   position: relative;
+}
+
+.wheel-places__wheel-front {  
+   position: absolute;
+   left: 4px;
+   top: 14px;
+}
+
+.wheel-places__back {
+   width: 160px;
+   height: 84px;
+   background-color: #000;
+   position: absolute;
+   right: 0;
+   border-top-left-radius: 80px;
+   border-top-right-radius: 80px;
+}
+
+.back__wheel {
+   position: relative;
+}
+
+.wheel-places__wheel-black {   
+   position: absolute;   
+   top: 24px;
+   left: 12px;   
+}
+
+.wheel__outer1 {
+   width: 76px;
+   height: 76px;
+   border-radius: 50%;
+   background-color: #000;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.wheel__outer2 {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   /* border: 3px solid #E0E0E0; */
+   background-color: #E0E0E0;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.wheel__outer3 {
+   width: 68px;
+   height: 68px;
+   border-radius: 50%;
+   /* border: 3px solid #000; */
+   background-color: #000;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.wheel__outer4 {
+   width: 66px;
+   height: 66px;
+   border-radius: 50%;
+   /* border: 5px solid #E0E0E0; */
+   background-color: #E0E0E0;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.wheel__outer5 {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   /* border: 5px solid #E0E0E0; */
+   background-color: #000;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.wheel__outer6 {
+   width: 58px;
+   height: 58px;
+   border-radius: 50%;
+   /* border: 5px solid #E0E0E0; */
+   background-color: #808080;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.wheel__outer7 {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   /* border: 5px solid #E0E0E0; */
+   background-color: #000;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.wheel__outer8 {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   /* border: 5px solid #E0E0E0; */
+   background-color: #606060;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.wheel__rect {
+   width: 20px;
+   height: 25px;
+   background-color: #E0E0E0;
+   position: relative;   
+}
+
+.wheel__rect1 {
+   width: 5px;
+   height: 100%;
+   background-color: #fff;
+   border-top-right-radius: 15px;
+   border-bottom-right-radius: 15px;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   overflow: hidden;
+}
+
+.wheel__rect2 {
+   width: 5px;
+   height: 100%;
+   background-color: #fff;
+   border-top-left-radius: 15px;
+   border-bottom-left-radius: 15px;
+   position: absolute;
+   right: 0px;
+   top: 0px;
+   overflow: hidden;
+}
