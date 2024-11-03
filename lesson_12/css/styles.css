@@ -138,6 +138,86 @@ body {
    animation-fill-mode: both;
 }
 
+/* ----- Newton ----- */
+
+.newton {}
+
+.newton__body {
+   width: 300px;
+   height: 300px;
+   margin: 0 auto;
+   position: relative;
+}
+
+.newton__body::before {
+   width: 100%;
+   content: "";
+   height: 5px;
+   position: absolute;
+   background-color: #794f45;
+   z-index: 2;
+   top: 0;
+}
+
+.newton__item {
+   position: absolute;
+   height: 100%;
+   inset-block-start: 0;
+   transform-origin: top;
+}
+
+.newton__item:nth-child(1) {
+   inset-inline-start: 50px;
+   animation: left-item 1s infinite ease-in alternate;
+}
+
+.newton__item:nth-child(2) {
+   inset-inline-start: 148px;
+}
+
+.newton__item:nth-child(3) {
+   inset-inline-end: 50px;
+   animation: right-item 1s infinite ease-out alternate;
+}
+
+.newton__item::before {
+   content: "";
+   height: 200px;
+   width: 5px;
+   background-color: #77608d;
+}
+
+.newton__item::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   background-color: #7a956b;
+   transform: translate(-52.5px, 0px);
+}
+
+@keyframes left-item {
+   0% {
+      transform: rotate(15deg);
+   }
+   50%,
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+@keyframes right-item {
+   0%,
+   50% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(-15deg);
+   }
+}
+
 /* ======== Car ======== */
 
 .page__car {
