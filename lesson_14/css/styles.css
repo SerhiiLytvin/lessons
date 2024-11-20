@@ -84,7 +84,14 @@ footer {
    line-height: 133.333%;
    color: #697484;
    position: relative;
+}
+
+.p-form__item:not(:has(textarea)) {
    margin-block-end: 24px;
+}
+
+.p-form__item:has(textarea) {
+   margin-block-end: 68px;
 }
 
 .p-form__input {
@@ -117,7 +124,7 @@ footer {
 
 .p-form__item textarea {
    resize: vertical;
-   height: 48px;
+   min-height: 48px;
    padding-block: 5px;
 }
 
@@ -141,42 +148,37 @@ footer {
 
 }
 
-.p-form__budget--subject {
+.p-form__budget-subject {
    display: flex;
    justify-content: space-between;
 }
 
-.p-form__budget--subject .budget {
+.p-form__budget-subject .budget {
    flex: 0 1 200px;
 }
 
-.p-form__budget--subject .subject {
+.p-form__budget-subject .subject {
    flex: 0 1 336px;
 }
 
 .p-form__button {
    display: inline-flex;
+   column-gap: 12px;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 12px 0px 12px 24px;
+   width: 141px;
    border-radius: 4px;
    background-color: #A53DFF;
-   width: 141px;
-   height: 48px;
-   padding-inline-start: 24px;
-   align-items: center;
-}
-
-.p-form__button button {
-   font-family: "Work Sans";
    font-weight: 600;
    line-height: 150%;
    color: #FFF;
-   margin-inline-end: 12px;
-   transition: margin-inline-end 0.5s;
-}   
-
-   .p-form__button:hover button{
-      margin-inline-end: 20px;
+   transition: column-gap 0.5s;
 }
 
+.p-form__button:hover{
+      column-gap: 20px;
+}
 
 /* ===== MOVIES ====== */
 
