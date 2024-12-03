@@ -1449,6 +1449,8 @@ body {
 @media (max-width:542px) {
    .movies__button {
       font-size: 15px;
+      display: block;
+      text-align: center;
    }
 }
 
