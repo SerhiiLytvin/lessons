@@ -558,6 +558,10 @@ body {
 
 @media (max-width:994px) {
 
+   .portfolio__getstarted {
+         padding-block-start: 160px;
+   }
+
    .getstarted__column-text {
       max-width: 300px;
    }
@@ -585,6 +589,10 @@ body {
 }
 
 @media (max-width:588px) {
+
+   .portfolio__getstarted {
+      padding-block-start: 80px;
+   }
    .getstarted__body {
       flex-direction: column;
    }
@@ -643,6 +651,10 @@ body {
 }
 
 @media (max-width:346px) {
+   .portfolio__getstarted {
+      padding-block-start: 40px;
+   }
+
    .getstarted__column-text {
       flex-direction: column;
       width: 100%;
