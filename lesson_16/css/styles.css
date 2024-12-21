@@ -341,9 +341,11 @@ body {
                color 0.5s;
 }
 
-.buttons-layout__work:hover {
-   background-color: #FFF;
-   color: #EF6D58;
+@media (any-hover:hover) {
+   .buttons-layout__work:hover {
+      background-color: #FFF;
+      color: #EF6D58;
+   }
 }
 
 .buttons-layout__contact {
@@ -351,8 +353,10 @@ body {
    transition: color 0.5s;
 }
 
-.buttons-layout__contact:hover {
-   color: aqua;
+@media (any-hover:hover) {
+   .buttons-layout__contact:hover {
+      color: aqua;
+   }
 }
 
 .layout__quote {
