@@ -89,13 +89,11 @@ body {
 }
 
 .header__button {
+   width: fit-content;
+   padding: 18px 35.54px 16px 34.46px;
+   
    border-radius: 6px;
-   border: 1px solid rgba(255, 255, 255, 0.30);
-   width: 138px;
-   height: 48px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   border: 1px solid rgba(255, 255, 255, 0.30);   
 
    color: #FFF;   
    font-size: 14px;
@@ -125,7 +123,7 @@ body {
    }
 
    .header__button {
-      width: 100px;
+      padding: 16px 31px 14px 30px;
       font-size: 12px;
    }
 }
@@ -200,6 +198,10 @@ body {
    .menu__link.active {
       text-decoration: underline;
       background-color: transparent;
+   }
+
+   .open-menu body {
+      overflow: hidden;
    }
 
    .open-menu .menu__body,
@@ -608,13 +610,17 @@ body {
    }
 }
 
-@media (max-width:950px) {
+@media (max-width:830px) {
    .agency__container {
       flex-direction: column-reverse;
    }
 
    .layout__images {
       max-height: fit-content;
+   }
+
+   .page__agency {
+      padding-block-start: 80px;
    }
 }
 
