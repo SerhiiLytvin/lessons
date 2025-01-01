@@ -1,0 +1,185 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700,800,900&display=swap");
+
+body {
+   font-family: "Epilogue", sans-serif;
+   background-color: #FDF0E9;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: clip;
+
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex-grow: 1;
+}
+
+/* ----------------------------- */
+
+[class*="__container"] {
+   max-width: 1342px;
+   margin-inline: auto;
+   padding-inline: 15px;
+}
+/* ======================================================= */
+/*                           HEADER                        */
+/* ======================================================= */
+.header {
+   padding-block: 30px;
+   background-color: #181818;
+}
+
+.header__container {
+   text-align: center;
+}
+
+.header__container h1 {
+   font-size: 45px;
+   color: #FFF;
+}
+
+@media (max-width:998px) {
+   header__container h1 {
+      font-size: 35px;
+   }
+}
+
+@media (max-width:460px) {
+   header__container h1 {
+      font-size: 25px;
+   }
+}
+
+/* ======================================================= */
+/*                      ЗАГАЛЬНІ ОБ'ЄКТИ                   */
+/* ======================================================= */
+
+
+/* ======================================================= */
+/*                             GRID                        */
+/* ======================================================= */
+
+.page__grid {
+   padding-block: 30px;
+}
+
+.grid__items {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(236px, 1fr));
+   row-gap: 15px;
+   column-gap: 15px;
+}
+
+.grid__item {
+   position: relative;
+   aspect-ratio: 304 / 152;
+   width: 100%;
+   height: 100%;
+}
+
+.grid__item img {   
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   object-position: center;
+}
+
+.grid__item span {
+   color: #FFF;
+   font-size: 40px;
+   font-weight: 800;
+   line-height: 120%;
+
+   position: absolute;
+   top: 10px;
+   left: 10px;
+}
+
+@media (min-width: 992px) {
+   .grid__items {   
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 32px;
+      row-gap: 24px;
+   }
+
+   .grid__item:nth-child(17n + 1),
+   .grid__item:nth-child(17n + 4),
+   .grid__item:nth-child(17n + 8),
+   .grid__item:nth-child(17n + 10),
+   .grid__item:nth-child(17n + 16) {
+      grid-row: span 2;
+      aspect-ratio: 304 / 184;
+   }
+
+   .grid__item:nth-child(17n + 3),
+   .grid__item:nth-child(17n + 9),
+   .grid__item:nth-child(17n + 11),
+   .grid__item:nth-child(17n + 17) {
+      grid-row: span 1;
+      aspect-ratio: 304 / 152;
+   }
+
+   .grid__item:nth-child(17n + 2),
+   .grid__item:nth-child(17n + 6),
+   .grid__item:nth-child(17n + 7),
+   .grid__item:nth-child(17n + 12),
+   .grid__item:nth-child(17n + 15) {
+      grid-row: span 3;
+      aspect-ratio: 304 / 296;
+   }
+
+   .grid__item:nth-child(17n + 5),
+   .grid__item:nth-child(17n + 14) {
+      grid-row: span 3;
+      aspect-ratio: 304 / 152;
+   }
+
+   .grid__item:nth-child(17n + 13) {
+      grid-row: span 5;
+      aspect-ratio: 304 / 504;
+   }
+}
+
+@media (min-width: 992px) and (max-width: 1350px) {
+   .grid__items {
+      column-gap: 15px;
+   }
+}
+
+@media (max-width: 880px) {
+   .grid__item span {
+      font-size: 35px;
+   }
+}
+
+/* ======================================================= */
+/*                           FOOTER                        */
+/* ======================================================= */
+.footer {
+   padding-block: 30px;
+   background-color: #181818;
+}
+
+.footer__container {
+   text-align: center;
+}
+
+.footer__container h2 {
+   font-size: 45px;
+   color: #FFF;
+}
+
+@media (max-width:460px) {
+   .header__container h2 {
+         font-size: 30px;
+   }
+   
+   .footer__container h2 {
+      font-size: 30px;
+   }
+}
+/*==============================================================================================================*/
