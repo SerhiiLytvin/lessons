@@ -368,7 +368,11 @@ body {
   }
 }
 
-@media (max-width: 1370px) {
+@media (max-width: 1371px) {
+  .page::before {
+    min-height: 1110px;
+  }
+
   .hero__body {
     padding-block-end: 23%;
   }  
@@ -379,6 +383,10 @@ body {
 }  
 
 @media (max-width: 1242px) {
+  .page::before {
+      min-height: 1030px;
+  }
+
   .hero__body {
     padding-block-end: 20%;
   }
@@ -393,12 +401,19 @@ body {
 }
 
 @media (max-width: 1138px) {
+  .page::before {
+    min-height: 980px;
+  }
+
   .hero__body {
     padding-block-end: 16%;
   }
 }
 
 @media (max-width: 1032px) {
+  .page::before {
+      min-height: 950px;
+  }
   .hero__body {
     padding-block-start: 40px;
   }
@@ -409,6 +424,9 @@ body {
 }
 
 @media (max-width: 934px) {
+  .page::before {
+      min-height: 770px;
+  }
   .page__hero {
       padding-block-end: 40px;
   }
@@ -427,6 +445,13 @@ body {
 }
 
 @media (max-width: 884px) {
+  .page__hero {
+      padding-block-end: 10px;
+  }
+
+  .page::before {
+      min-height: 710px;
+  }
   .hero__body {
       padding-block-start: 20px;
       padding-block-end: 0;
@@ -437,6 +462,11 @@ body {
   }
 }
 
+@media (max-width: 870px) {
+  .page::before {
+    min-height: 760px;
+  }
+}
 @media (max-width: 767px) 
 {
   .hero__content {
@@ -449,6 +479,177 @@ body {
     aspect-ratio: 975 / 780;
   }
 }  
+
+/* ======================================================= */
+/*                         ЗАГАЛЬНІ                        */
+/* ======================================================= */
+
+.header-block {}
+
+.header-block:not(:last-child) {
+  margin-block-end: 80px;
+}
+
+.header-block__title {
+  color: #091133;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+
+.header-block__title:not(:last-child) {
+  margin-block-end: 16px;
+}
+
+.header-block__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 140px;
+  color: #6F7CB2;
+  line-height: 162.5%;
+}
+
+/* ======================================================= */
+/*                         POWERFULL                       */
+/* ======================================================= */
+
+.section__powerfull {}
+
+.powerfull {
+  padding-block-start: 108px;
+  padding-block-end: 108.04px;
+}
+
+@media (min-width:767.98px) {
+  .powerfull__container {
+    display: flex;
+  }
+
+  .powerfull__content {
+    padding-block-start: 52px;
+    flex-basis: 48.4685%;
+  }
+}
+.powerfull__header {}
+
+
+.powerfull__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.powerfull__card {
+}
+
+.card-info {
+  flex-basis: 47.39777%;
+}
+
+.card-info__img {
+  width: 36px;
+  height: 36px;
+}
+
+.card-info__img img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 36 / 36;
+}
+
+.card-info__img:not(:last-child) {
+  margin-block-end: 14px;
+} 
+
+.card-info__title {
+  color: #091133;
+  font-weight: 500;
+  line-height: 162.5%;
+}
+
+.card-info__title:not(:last-child) {
+  margin-block-end: 6px;
+}
+
+.card-info__text {
+  color: #5D6970;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.powerfull__image {
+  flex-basis: 51.531532%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.powerfull__wrapper {  
+  max-width: 540px;
+}
+
+.powerfull__wrapper img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 540 / 524;  
+}
+
+@media (max-width: 1140px) {
+  .powerfull {
+      padding-block-start: 90px;
+      padding-block-end: 90px;
+    }
+}
+
+@media (max-width: 990px) {
+  .powerfull {
+    padding-block-start: 50px;
+    padding-block-end: 50px;
+  }
+
+  .powerfull__content {
+    padding-block-start: 30px;
+  }
+
+  .header-block:not(:last-child) {
+    margin-block-end: 40px;
+  }
+
+  .header-block__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .powerfull {
+      padding-block-start: 20px;
+      padding-block-end: 20px;
+    }
+  .powerfull__content {
+    margin-block-end: 20px;
+  }
+}
+
+/* ======================================================= */
+/*                         FLOWER                          */
+/* ======================================================= */
+
+.section__flower {}
+
+.flower {}
+
+.flower__container {
+  padding-block-start: 122px;
+}
+
+.flower__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.flower__image {}
+
+.flower__header {}
+
 /* ======================================================= */
 /*                           FOOTER                        */
 /* ======================================================= */
