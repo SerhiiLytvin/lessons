@@ -8,7 +8,7 @@ body {
 
 .wrapper {
   min-height: 100%;
-  overflow: clip;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -228,6 +228,8 @@ body {
 
 .page {
   position: relative;
+  padding-block-start: 60px;
+  z-index: 1;
 }
 
 .page::before {
@@ -558,7 +560,7 @@ body {
 /*                         POWERFULL                       */
 /* ======================================================= */
 
-.section__powerfull {}
+.page__powerfull {}
 
 .powerfull {
   padding-block-start: 108px;
@@ -588,7 +590,7 @@ body {
 .powerfull__card {
 }
 
-.card-info {
+.card-info__card {
   flex-basis: 47.39777%;
 }
 
@@ -679,7 +681,7 @@ body {
 /*                         FLOWER                          */
 /* ======================================================= */
 
-.section__flower {}
+.page__flower {}
 
 .flower {
   padding-block-start: 122px;
@@ -783,7 +785,7 @@ body {
 /*                         MOBILE                          */
 /* ======================================================= */
 
-.section__mobile {}
+.page__mobile {}
 
 .mobile {
   padding-block-start: 223px;
@@ -934,7 +936,7 @@ body {
 /*                           LILY                          */
 /* ======================================================= */
 
-.section__lily {}
+.page__lily {}
 
 .lily {
   padding-block-start: 232px;
@@ -1059,12 +1061,12 @@ body {
 /* ======================================================= */
 
 
-.section__price {
+.page__price {
   background-color: #E7ECFF;
   opacity: 0.5;
 }
 
-.section__price::before {
+.page__price::before {
   content: "";
   width: 100%;
   height: 68px;
