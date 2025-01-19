@@ -19,11 +19,6 @@ body {
    flex-grow: 1;
 }
 
-.second__task {
-   font-size: 20px;
-   color: aqua;
-   text-decoration: underline;
-}
 /* ----------------------------- */
 
 [class*="__container"] {
@@ -32,14 +27,25 @@ body {
    padding-inline: 15px;
 }
 
-.start__container {
-   background-color: #F3D1BF;
+.page__professional {
+   background-color: #F9E5DA;
 }
 
-.section__clients {
+.page__value {
+   background-color: #F9E5DA;
+   color: #28293E;
+}
+
+.page__quote {
+   background-color: #F9E5DA;
+   color: #28293E;
+}
+
+.page__start {
    background-color: #F3D1BF;
+   color: #28293E;
 }
 
 footer {
-   background-color: #F3D1BF;
+   background-color: #28293E;
 }
